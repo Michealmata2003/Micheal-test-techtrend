@@ -1,0 +1,614 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pulp Display', sans-serif;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(219, 219, 219, 0.5);
+    /* margin-bottom: 150px; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    margin: auto;
+    background-color: #ffffff;
+}
+.scoop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #ffffff;
+    width: 100%;
+}
+.harmburger{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.cancel{
+    display: none;
+}
+.mid-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.mid-nav li {
+    list-style: none;
+}
+
+.mid-nav li a {
+    color: rgba(12, 1, 20, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.end-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.end-nav li {
+    list-style: none;
+}
+
+.votes {
+    display: flex;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.line {
+    width: 1px;
+    height: 40px;
+    background: #DBDBDB;
+}
+
+.owner {
+    color: #0C0114;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.first-part {
+    margin-top: 100px;
+}
+
+.first-part h1 {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}
+
+.category-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+
+}
+
+.for-search-input {
+    width: 45%;
+    border: 1px solid rgba(219, 219, 219, 1);
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+    text-align: center;
+    display: flex;
+    padding: 4px 10px;
+}
+
+.search-input {
+    color: #BABABA;
+    width: 100%;
+    padding: 10px;
+    margin: 0px 8px;
+    border: none;
+    outline: none;
+}
+
+.click-search {
+    background-color: rgba(62, 5, 99, 1);
+    padding: 12px 24px;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+
+}
+
+.for-each {
+    /* background: #FFFFFF; */
+    background-color: white;
+    box-shadow: 0px 2px 15px rgba(78, 76, 76, 0.5);
+    border-radius: 8px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.for-each h6 {
+    padding: 10px 0px;
+}
+
+.for-each svg {
+    float: right;
+}
+
+/* styling for the vote page */
+
+
+
+
+.increase {
+    background-color: #1F0332;
+    height: fit-content;
+}
+
+.increase .container {
+    padding-top: 100px;
+}
+
+.increase img {
+    margin-top: -36px;
+}
+
+.your {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+}
+
+.vote-full-svg {
+    position: absolute;
+    bottom: 0px;
+}
+
+.your h3 {
+    font-weight: 600;
+    color: rgba(12, 1, 20, 1);
+    font-size: 36px;
+}
+
+.your p {
+    color: #808080;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.you {
+    padding: 20px;
+}
+
+.All-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    width: 100%;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.card1 {
+    background-color: #1F0332;
+    width: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    height: 40vh;
+    margin-top: 230px;
+}
+
+.card1 h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 40px;
+}
+
+.card1 h6 {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.card1 h5 {
+    font-weight: 400;
+    font-size: 48px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.card2 {
+    background-color: #1F0332;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    height: 50vh;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card2 h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 40px;
+
+}
+
+.card2 h6 {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 90px;
+    padding-top: 10px;
+
+}
+
+.card2 h5 {
+    font-weight: 400;
+    font-size: 48px;
+    padding-bottom: 50px;
+}
+
+.but {
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 12px 48px;
+    border: none;
+}
+
+.card3 {
+    background-color: #1F0332;
+    width: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    height: 60vh;
+    margin-top: 75px;
+}
+
+.card3 h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 40px;
+
+}
+
+.card3 h6 {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.card3 h5 {
+    font-weight: 400;
+    font-size: 48px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+
+
+.card4 {
+    background-color: #1F0332;
+    width: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    height: 70vh;
+    margin-bottom: 60px;
+}
+
+.card4 h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 40px;
+
+}
+
+.card4 h6 {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.card4 h5 {
+    font-weight: 400;
+    font-size: 48px;
+    padding-top: 220px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 100%;
+    background-color: #000000B2;
+}
+
+.mainoverlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.mainoverlay span {
+    float: right;
+}
+
+.overlaydiv {
+    margin-top: 50px;
+}
+
+.overlaydiv h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #3E0563;
+}
+
+.overlaydiv p {
+    font-family: 'Pulp Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #0C0114;
+}
+
+.overlaydiv button {
+    width: 100%;
+    margin: auto;
+    outline: none;
+    border: none;
+    height: 51px;
+    background: #3E0563;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    cursor: pointer;
+    order: 0;
+    flex-grow: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+
+
+
+
+
+
+
+.exception_data {
+    position: absolute;
+    /* background-color: red; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.seventy h1 {
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #0C0114;
+}
+.seventy h2 {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #0C0114;
+}
+
+.seventy span {
+    top: 3px;
+    color: #3E0563;
+    font-family: 'Pulp Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #3E0563;
+}
+
+.votee {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
+}
+
+.mainvotes {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    width: 100%;
+    margin: 30px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.votesec {
+    width: 70%;
+    width: fit-content;
+    margin: auto;
+    border: 1px solid #3E0563;
+    border-radius: 5px;
+}.ex{
+    cursor:   ' b ';
+}
+
+.votesec input {
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 2px 10px;
+    text-align: center;
+    background-color: #3E0563;
+    cursor: pointer;
+}
+
+.votesec span {
+    color: #0C0114;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: relative;
+    height: 100vh;
+    position: fixed;
+    display:none;
+    width: 100%;
+    background-color: #000000B2;
+}
+
+.mainoverlay {
+    position: absolute;
+    width: 40%;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.mainoverlay span {
+    float: right;
+}
+
+.overlaydiv {
+    margin-top: 50px;
+}
+
+.overlaydiv h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #3E0563;
+}
+
+.overlaydiv p {
+    font-family: 'Pulp Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #0C0114;
+}
+
+.overlaydiv button {
+    width: 100%;
+    margin: auto;
+    outline: none;
+    border: none;
+    height: 51px;
+    background: #3E0563;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    cursor: pointer;
+    order: 0;
+    flex-grow: 0;
+    transition: all ease-in-out 0.5s;
+}
